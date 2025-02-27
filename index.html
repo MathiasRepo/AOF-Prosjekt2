@@ -9,82 +9,99 @@
     <meta property="og:description" content="Book your appointment today - Professional services and quality care">
     <meta property="og:type" content="website">
     <title>AOF Østlandet | Booking & Services</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./script.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <!-- Add Font Awesome for social icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Tailwind Config -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        // Add your custom colors here
-                        
-                    }
-                }
-            }           
-        }
-    </script>
 </head>
 <body class="bg-white">
-    <main class="min-h-screen">
-        <header class="fixed w-full top-0 bg-white shadow-md z-50">
-            <nav aria-label="Main navigation" class="container mx-auto px-4 py-4 flex justify-between items-center">
-                <img src="" alt="Your Company Logo" class="h-12">
-                <ul class="flex space-x-6">
-                    <li><a href="#kontakt" class="hover:text-blue-600 transition-colors">Kontakt</a></li>
-                    <li><a href="#booking" class="hover:text-blue-600 transition-colors">Booking</a></li>
-                    <li><a href="#samarbeidspartnere" class="hover:text-blue-600 transition-colors">Samarbeidspartnere</a></li>
-                </ul>
-            </nav>
-        </header>
-        <section class="mt-20">
-            <div class="bg-gray-200 py-44 pl-40 flex items-center">
-                <h1 class="text-4xl font-bold text-center">AOF Østlandet</h1>
-            </div>
-        </section>
+    <div id="root"></div>
 
-        
-        <section>
-            <h1 class="text-4xl font-bold text-center mb-8 mt-24">Book din time</h1>
-        <div class="w-full h-[820px] overflow-hidden my-12">
-            <div class="-mt-[16%] w-full h-[110%]">
-            <iframe
-            class="w-full h-full border-none overflow-hidden"
-            scrolling="no"
-            frameborder="0"
-            src="https://www.supersaas.com/schedule/Slowboii/Phoenixres?partitioned=1"
-            ></iframe>
-            </div>
-        </div>
-        </section>
-        <section id="kontakt" class="kontakt container mx-auto px-4 py-16 bg-gray-50">
-            <h2 class="text-3xl font-bold text-center mb-8">Kontakt oss</h2>
-            <!-- Contact information will go here -->
-        </section>
-
-        <section class="button-up fixed bottom-8 right-8">
-            <button aria-label="Scroll to top" class="bg-blue-600 text-white p-5 rounded-full shadow-lg hover:bg-blue-700 transition-colors">
-                <i class="fas fa-arrow-up"></i>
-            </button>
-        </section>
-
-        <footer class="bg-gray-800 text-white py-8">
-            <div class="container mx-auto px-4">
-                <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-                    <p class="text-sm">&copy; <script>document.write(new Date().getFullYear())</script> Your Company Name</p>
-                    <img src="" alt="Your Company Logo" class="h-8">
-                    <ul class="social-links flex space-x-6">
-                        <li><a href="#" aria-label="Besøk vår Facebook side" class="hover:text-blue-400 transition-colors"><i class="fab fa-facebook text-xl"></i></a></li>
-                        <li><a href="#" aria-label="Følg oss på Instagram" class="hover:text-pink-400 transition-colors"><i class="fab fa-instagram text-xl"></i></a></li>
-                        <li><a href="#" aria-label="Følg oss på LinkedIn" class="hover:text-blue-300 transition-colors"><i class="fab fa-linkedin text-xl"></i></a></li>
+    <script type="text/babel">
+        // Navigation Component
+        const Navigation = () => (
+            <header className="fixed w-full top-0 bg-white shadow-md z-50">
+                <nav aria-label="Main navigation" className="container mx-auto px-4 py-4 flex justify-between items-center">
+                    <img src="" alt="Your Company Logo" className="h-12" />
+                    <ul className="flex space-x-6">
+                        <li><a href="#kontakt" className="hover:text-blue-600 transition-colors">Kontakt</a></li>
+                        <li><a href="#booking" className="hover:text-blue-600 transition-colors">Booking</a></li>
+                        <li><a href="#samarbeidspartnere" className="hover:text-blue-600 transition-colors">Samarbeidspartnere</a></li>
                     </ul>
+                </nav>
+            </header>
+        );
+
+        const HeroSection = () => (
+            <section className="mt-20">
+                <div className="bg-gray-200 py-44 pl-40 flex items-center">
+                    <h1 className="text-4xl font-bold text-center">AOF Østlandet</h1>
                 </div>
-            </div>
-        </footer>
-    </main>
+            </section>
+        );
+
+        const BookingSection = () => (
+            <section>
+                <h1 className="text-4xl font-bold text-center mb-8 mt-24">Book din time</h1>
+                <div className="w-full h-[820px] overflow-hidden my-12">
+                    <div className="-mt-[16%] w-full h-[110%]">
+                        <iframe
+                            className="w-full h-full border-none overflow-hidden"
+                            scrolling="no"
+                            frameBorder="0"
+                            src="https://www.supersaas.com/schedule/Slowboii/Phoenixres?partitioned=1"
+                        />
+                    </div>
+                </div>
+            </section>
+        );
+
+        const ContactSection = () => (
+            <section id="kontakt" className="kontakt container mx-auto px-4 py-16 bg-gray-50">
+                <h2 className="text-3xl font-bold text-center mb-8">Kontakt oss</h2>
+            </section>
+        );
+
+        const ScrollToTop = () => (
+            <section className="button-up fixed bottom-8 right-8">
+                <button aria-label="Scroll to top" className="bg-blue-600 text-white p-5 rounded-full shadow-lg hover:bg-blue-700 transition-colors">
+                    <i className="fas fa-arrow-up"></i>
+                </button>
+            </section>
+        );
+
+        const Footer = () => (
+            <footer className="bg-gray-800 text-white py-8">
+                <div className="container mx-auto px-4">
+                    <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                        <p className="text-sm">&copy; {new Date().getFullYear()} Your Company Name</p>
+                        <img src="" alt="Your Company Logo" className="h-8" />
+                        <ul className="social-links flex space-x-6">
+                            <li><a href="#" aria-label="Besøk vår Facebook side" className="hover:text-blue-400 transition-colors"><i className="fab fa-facebook text-xl"></i></a></li>
+                            <li><a href="#" aria-label="Følg oss på Instagram" className="hover:text-pink-400 transition-colors"><i className="fab fa-instagram text-xl"></i></a></li>
+                            <li><a href="#" aria-label="Følg oss på LinkedIn" className="hover:text-blue-300 transition-colors"><i className="fab fa-linkedin text-xl"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        );
+
+        const App = () => (
+            <main className="min-h-screen">
+                <Navigation />
+                <HeroSection />
+                <BookingSection />
+                <ContactSection />
+                <ScrollToTop />
+                <Footer />
+            </main>
+        );
+
+        ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+    </script>
 </body>
 </html>
