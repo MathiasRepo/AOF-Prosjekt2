@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Book your appointment today - Professional services and quality care">
     <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="Your Company Name">
+    <meta property="og:title" content="AOF Østlandet">
     <meta property="og:description" content="Book your appointment today - Professional services and quality care">
     <meta property="og:type" content="website">
-    <title>Your Company Name | Booking & Services</title>
+    <title>AOF Østlandet | Booking & Services</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <!-- Add Font Awesome for social icons -->
@@ -21,9 +22,10 @@
                 extend: {
                     colors: {
                         // Add your custom colors here
+                        
                     }
                 }
-            }
+            }           
         }
     </script>
 </head>
@@ -39,21 +41,35 @@
                 </ul>
             </nav>
         </header>
-
-        <section class="button-up fixed bottom-8 right-8">
-            <button aria-label="Scroll to top" class="bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition-colors">
-                <i class="fas fa-arrow-up"></i>
-            </button>
+        <section class="mt-20">
+            <div class="bg-gray-200 py-44 pl-40 flex items-center">
+                <h1 class="text-4xl font-bold text-center">AOF Østlandet</h1>
+            </div>
         </section>
 
-        <section id="booking" class="booking container mx-auto px-4 pt-24 pb-16">
-            <h1 class="text-4xl font-bold text-center mb-8">Book din time</h1>
-            <!-- Booking form will go here -->
+        
+        <section>
+            <h1 class="text-4xl font-bold text-center mb-8 mt-24">Book din time</h1>
+        <div class="w-full h-[820px] overflow-hidden my-12">
+            <div class="-mt-[16%] w-full h-[110%]">
+            <iframe
+            class="w-full h-full border-none overflow-hidden"
+            scrolling="no"
+            frameborder="0"
+            src="https://www.supersaas.com/schedule/Slowboii/Phoenixres?partitioned=1"
+            ></iframe>
+            </div>
+        </div>
         </section>
-
         <section id="kontakt" class="kontakt container mx-auto px-4 py-16 bg-gray-50">
             <h2 class="text-3xl font-bold text-center mb-8">Kontakt oss</h2>
             <!-- Contact information will go here -->
+        </section>
+
+        <section class="button-up fixed bottom-8 right-8">
+            <button aria-label="Scroll to top" class="bg-blue-600 text-white p-5 rounded-full shadow-lg hover:bg-blue-700 transition-colors">
+                <i class="fas fa-arrow-up"></i>
+            </button>
         </section>
 
         <footer class="bg-gray-800 text-white py-8">
