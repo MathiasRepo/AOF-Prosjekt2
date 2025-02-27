@@ -1,64 +1,46 @@
 # AOF Østlandet Nettside 🎓
 
-## 🗺️ Produktveikart 2025
-> *Vår visjon for en moderne og brukervennlig læringsplattform*
+## 🗺️ Produktveikart
+> *Fremtidige forbedringer og nye funksjoner*
 
 ### 🎯 Brukeropplevelse
-```mermaid
-graph LR
-    A[Start] --> B[Q2 2025]
-    B --> C[Q3 2025]
-    C --> D[Q4 2025]
-    
-    style A fill:#f9f9f9,stroke:#666
-    style B fill:#e1f5fe,stroke:#03a9f4
-    style C fill:#e8f5e9,stroke:#4caf50
-    style D fill:#fff3e0,stroke:#ff9800
-```
-
-| Status | Funksjon | Prioritet | Beskrivelse |
-|--------|----------|-----------|-------------|
-| 🔄 | **Kurskatalog** | HØYT | Søkbar oversikt med avanserte filtreringsmuligheter |
-| 🔜 | **Påmeldingsportal** | HØYT | Sømløs brukerregistrering og påmelding |
-| 📅 | **Live Chat** | MEDIUM | AI-drevet kundeservice 24/7 |
-| 📅 | **FAQ-seksjon** | LAV | Intelligent søk i vanlige spørsmål |
-| 🔜 | **Nyhetsbrev** | MEDIUM | Personaliserte kursnyheter |
+| Status | Funksjon | Beskrivelse |
+|:------:|----------|-------------|
+| ⭐ | **Kurskatalog** | Søkbar oversikt over alle kurs |
+| 🔄 | **Påmeldingsportal** | Enkel påmelding og registrering |
+| 🔜 | **Live Chat** | Kundeservice og support |
+| 🔜 | **FAQ-seksjon** | Ofte stilte spørsmål |
+| 📅 | **Nyhetsbrev** | Oppdateringer og nyheter |
 
 ### 📚 Kursadministrasjon
-| Status | Funksjon | Lansering | Beskrivelse |
-|--------|----------|-----------|-------------|
-| 🔄 | **Kursevaluering** | Q2 2025 | Automatisert tilbakemeldingssystem |
-| 🔜 | **Kurshistorikk** | Q2 2025 | Personlig læringsoversikt |
-| 📅 | **Digitale Kursbevis** | Q3 2025 | Blockchain-verifiserte sertifikater |
-| 🔜 | **Ressursbibliotek** | Q3 2025 | Smart innholdshåndtering |
+| Status | Funksjon | Beskrivelse |
+|:------:|----------|-------------|
+| 🔄 | **Kursevaluering** | Tilbakemeldingssystem |
+| 🔜 | **Kurshistorikk** | Oversikt over gjennomførte kurs |
+| 📅 | **Digitale Kursbevis** | Automatiske kursbevis |
+| 🔜 | **Ressursbibliotek** | Kursmaterialer og ressurser |
 
 ### ⚡ Interaktive Elementer
-| Status | Funksjon | Teknologi | Beskrivelse |
-|--------|----------|-----------|-------------|
-| 🔄 | **Virtuell Omvisning** | WebGL | Immersiv 360° opplevelse |
-| 🔜 | **Kalenderintegrasjon** | API | Sync med Google/Outlook |
-| 📅 | **Delingsknapper** | Social API | Direkte SoMe-integrasjon |
-| 🔜 | **Progresjonssporing** | React | Visuell læringsanalyse |
+| Status | Funksjon | Beskrivelse |
+|:------:|----------|-------------|
+| 🔄 | **Virtuell Omvisning** | 360° visning av lokaler |
+| 🔜 | **Kalenderintegrasjon** | Synkroniser med din kalender |
+| 📅 | **Delingsknapper** | Del på sosiale medier |
+| 🔜 | **Progresjonssporing** | Følg din fremgang |
 
 ### 🔧 Administrativt
-| Status | Funksjon | Impact | Beskrivelse |
-|--------|----------|--------|-------------|
-| ⭐ | **Instruktørprofiler** | HØYT | LinkedIn-style profiler |
-| 🔄 | **Bedriftsportal** | HØYT | Skreddersydd B2B-løsning |
-| 🔜 | **Automatiske Påminnelser** | MEDIUM | SMS/E-post automatisering |
-| 📅 | **Ventelistefunksjon** | LAV | Smart køhåndtering |
+| Status | Funksjon | Beskrivelse |
+|:------:|----------|-------------|
+| ⭐ | **Instruktørprofiler** | Presentasjon av kursholdere |
+| 🔄 | **Bedriftsportal** | For bedriftskunder |
+| 🔜 | **Påminnelser** | SMS/E-post varsler |
+| 📅 | **Venteliste** | Automatisk køsystem |
 
-#### Statusindikatorer
-- ⭐ Lansert
-- 🔄 Under utvikling
-- 🔜 Neste på listen
-- 📅 Planlagt
-- ❄️ På vent
-
-#### Prioriteringsnivåer
-- 🔴 HØYT - Kritisk for plattformen
-- 🟡 MEDIUM - Viktig forbedring
-- 🟢 LAV - Fin-å-ha funksjon
+#### Symbolforklaring
+⭐ Ferdig
+🔄 Under utvikling
+🔜 Kommer snart
+📅 Planlagt
 
 ## Om Prosjektet
 Dette er den offisielle nettsiden for AOF Østlandet, utviklet med moderne webteknologier for å gi brukerne en sømløs opplevelse ved booking av kurs og tjenester.
