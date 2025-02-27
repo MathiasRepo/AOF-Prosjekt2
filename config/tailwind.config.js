@@ -1,9 +1,12 @@
 /** @type {import('tailwindcss').Config} */
+import path from 'path';
+import tailwindcssAnimate from 'tailwindcss-animate';
+
 export default {
   darkMode: ["class"],
   content: [
-    './src/**/*.{js,jsx}',
-    './index.html',
+    path.join(__dirname, '../src/**/*.{js,jsx}'),
+    path.join(__dirname, '../index.html'),
   ],
   theme: {
     container: {
@@ -79,5 +82,5 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [tailwindcssAnimate],
 }
