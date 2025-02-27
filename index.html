@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book your appointment today - Professional services and quality care">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="Your Company Name">
+    <meta property="og:description" content="Book your appointment today - Professional services and quality care">
+    <meta property="og:type" content="website">
+    <title>Your Company Name | Booking & Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Add Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // Add your custom colors here
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white">
+    <main class="min-h-screen">
+        <header class="fixed w-full top-0 bg-white shadow-md z-50">
+            <nav aria-label="Main navigation" class="container mx-auto px-4 py-4 flex justify-between items-center">
+                <img src="" alt="Your Company Logo" class="h-12">
+                <ul class="flex space-x-6">
+                    <li><a href="#kontakt" class="hover:text-blue-600 transition-colors">Kontakt</a></li>
+                    <li><a href="#booking" class="hover:text-blue-600 transition-colors">Booking</a></li>
+                    <li><a href="#samarbeidspartnere" class="hover:text-blue-600 transition-colors">Samarbeidspartnere</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="button-up fixed bottom-8 right-8">
+            <button aria-label="Scroll to top" class="bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition-colors">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+        </section>
+
+        <section id="booking" class="booking container mx-auto px-4 pt-24 pb-16">
+            <h1 class="text-4xl font-bold text-center mb-8">Book din time</h1>
+            <!-- Booking form will go here -->
+        </section>
+
+        <section id="kontakt" class="kontakt container mx-auto px-4 py-16 bg-gray-50">
+            <h2 class="text-3xl font-bold text-center mb-8">Kontakt oss</h2>
+            <!-- Contact information will go here -->
+        </section>
+
+        <footer class="bg-gray-800 text-white py-8">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                    <p class="text-sm">&copy; <script>document.write(new Date().getFullYear())</script> Your Company Name</p>
+                    <img src="" alt="Your Company Logo" class="h-8">
+                    <ul class="social-links flex space-x-6">
+                        <li><a href="#" aria-label="Besøk vår Facebook side" class="hover:text-blue-400 transition-colors"><i class="fab fa-facebook text-xl"></i></a></li>
+                        <li><a href="#" aria-label="Følg oss på Instagram" class="hover:text-pink-400 transition-colors"><i class="fab fa-instagram text-xl"></i></a></li>
+                        <li><a href="#" aria-label="Følg oss på LinkedIn" class="hover:text-blue-300 transition-colors"><i class="fab fa-linkedin text-xl"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
