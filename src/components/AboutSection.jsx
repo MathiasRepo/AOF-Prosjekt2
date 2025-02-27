@@ -1,4 +1,6 @@
 import React from 'react';
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
 
 export const AboutSection = () => {
   return (
@@ -34,9 +36,9 @@ export const AboutSection = () => {
             {/* Right column with content */}
             <div className="md:w-3/5">
               <div className="mb-6">
-                <div className="inline-block mb-4 px-3 py-1 bg-hubBlue/10 rounded-full">
+                <Button variant="outline" className="mb-4 px-3 py-1 bg-hubBlue/10 border-none rounded-full">
                   <p className="text-sm font-medium text-hubBlue">Om oss</p>
-                </div>
+                </Button>
                 <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
                   HUB Phønix
                 </h2>
@@ -45,20 +47,33 @@ export const AboutSection = () => {
               <div className="prose prose-invert prose-zinc max-w-none">
                 <p>
                   HUB Phønix er et kompetansesenter for bærekraft som skal bidra til økt kunnskap, 
-                  engasjement og handling for en bærekraftig utvikling i Fredrikstad og Hvaler-regionen.
+                  engasjement og handling for en bærekraftig fremtid.
                 </p>
                 
-                <p>
-                  Vi tilbyr kurs, workshops, konferanser og andre arrangementer som fremmer 
-                  bærekraftig utvikling og innovasjon. HUB Phønix er et samarbeid mellom 
-                  AOF Østfold og Akershus, Fredrikstad kommune og andre partnere.
-                </p>
+                <Separator className="my-4 bg-zinc-700/50" />
                 
                 <p>
-                  Vårt mål er å være en katalysator for bærekraftig utvikling i regionen, 
-                  og å koble sammen næringsliv, utdanningsinstitusjoner, offentlige aktører 
-                  og befolkningen i en felles innsats for en bærekraftig fremtid.
+                  Vår visjon er å skape et inkluderende fellesskap der mennesker kan møtes, 
+                  lære og samarbeide om bærekraftige løsninger. Vi tilbyr kurs, workshops, 
+                  arrangementer og ressurser som fremmer bærekraftig utvikling.
                 </p>
+              </div>
+              
+              <div className="mt-8 flex space-x-4">
+                <Button 
+                  variant="default" 
+                  className="bg-hubBlue hover:bg-hubBlue-dark text-white"
+                  asChild
+                >
+                  <a href="#tjenester">Våre tjenester</a>
+                </Button>
+                <Button 
+                  variant="outline" 
+                  className="border-hubBlue text-hubBlue hover:bg-hubBlue/10"
+                  asChild
+                >
+                  <a href="#kontakt">Kontakt oss</a>
+                </Button>
               </div>
             </div>
           </div>

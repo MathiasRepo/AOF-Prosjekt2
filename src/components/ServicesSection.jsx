@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from "@/components/ui/button";
 
 export const ServicesSection = () => {
   const services = [
@@ -75,12 +76,13 @@ export const ServicesSection = () => {
           </div>
           
           <div className="mt-16 text-center">
-            <a 
-              href="#booking" 
-              className="inline-flex items-center justify-center px-6 py-3 bg-hubBlue hover:bg-hubBlue-dark text-white font-medium rounded-md transition-colors duration-300"
+            <Button 
+              asChild
+              size="lg"
+              className="bg-hubBlue hover:bg-hubBlue-dark text-white"
             >
-              Book rom eller tjeneste
-            </a>
+              <a href="#booking">Book rom eller tjeneste</a>
+            </Button>
           </div>
         </div>
       </div>

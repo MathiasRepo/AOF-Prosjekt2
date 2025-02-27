@@ -1,4 +1,6 @@
 import React from 'react';
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
 
 export const ResourcesSection = () => {
   const resources = [
@@ -45,22 +47,31 @@ export const ResourcesSection = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {resources.map((resource, index) => (
-              <a 
-                key={index} 
-                href={resource.link}
-                target="_blank"
-                rel="noopener noreferrer"
+              <div 
+                key={index}
                 className="bg-zinc-900/40 backdrop-blur-sm p-6 rounded-xl border border-zinc-800/50 hover:border-hubBlue/50 transition-colors duration-300"
               >
                 <h3 className="text-xl font-semibold text-white mb-3">{resource.title}</h3>
                 <p className="text-zinc-400 mb-4">{resource.description}</p>
-                <div className="flex items-center text-hubBlue">
-                  <span className="mr-2">Les mer</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                  </svg>
-                </div>
-              </a>
+                <Separator className="my-4 bg-zinc-800/50" />
+                <Button 
+                  variant="link" 
+                  className="p-0 h-auto text-hubBlue hover:text-hubBlue-light"
+                  asChild
+                >
+                  <a 
+                    href={resource.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center"
+                  >
+                    <span>Les mer</span>
+                    <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                  </a>
+                </Button>
+              </div>
             ))}
           </div>
         </div>
