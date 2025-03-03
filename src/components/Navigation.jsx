@@ -35,26 +35,26 @@ export const Navigation = () => {
         </div>
 
         <div className="flex-1 flex justify-center">
-          <ul className="flex space-x-8">
-            <li>
+          <ul className="flex space-x-6">
+            <li className="relative group">
               <a
                 href="#kontakt"
-                className={`font-medium transition-colors ${
+                className={`font-medium transition-colors block py-3 px-4 rounded-md ${
                   isScrolled
-                    ? "text-gray-800 hover:text-blue-600"
-                    : "text-white hover:text-blue-200"
+                    ? "text-gray-800 hover:text-blue-600 hover:bg-gray-100"
+                    : "text-white hover:text-blue-200 hover:bg-white/10"
                 }`}
               >
                 Kontakt
               </a>
             </li>
-            <li>
+            <li className="relative group">
               <a
                 href="#samarbeidspartnere"
-                className={`font-medium transition-colors ${
+                className={`font-medium transition-colors block py-3 px-4 rounded-md ${
                   isScrolled
-                    ? "text-gray-800 hover:text-blue-600"
-                    : "text-white hover:text-blue-200"
+                    ? "text-gray-800 hover:text-blue-600 hover:bg-gray-100"
+                    : "text-white hover:text-blue-200 hover:bg-white/10"
                 }`}
               >
                 Samarbeidspartnere
@@ -66,7 +66,7 @@ export const Navigation = () => {
         <div className="flex-1 flex justify-end">
           <a
             href="#booking"
-            className={`px-5 py-2 rounded-md font-medium transition-all transform hover:scale-105 ${
+            className={`px-6 py-3 rounded-md font-medium transition-all transform hover:scale-105 ${
               isScrolled
                 ? "bg-gradient-to-r from-blue-600 to-indigo-700 text-white shadow-md"
                 : "bg-white text-blue-700 shadow-lg"
