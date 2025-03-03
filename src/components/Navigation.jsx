@@ -31,9 +31,9 @@ export const Navigation = () => {
         <div className="flex-1">
           <img
             src={getImagePath(isScrolled 
-                ? "/images/logo-color.png"
-                : "/images/logo-white.png")}
-            alt="HUB Phønix Logo"
+                ? "/img/HUB PHONIX LOGO FRG.png"
+                : "/img/HUB PHONIX LOGO HVIT.png")}
+            alt="HUB Phonix Logo"
             className="h-12 transition-all duration-300"
           />
         </div>

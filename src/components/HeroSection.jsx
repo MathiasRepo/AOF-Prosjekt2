@@ -9,7 +9,7 @@ export const HeroSection = () => (
       <div className="flex flex-col md:flex-row items-center justify-between">
         <div className="md:w-1/2 text-center md:text-left text-white">
           <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-2 font-museo">
-            HUB Phønix
+            HUB Phonix
           </h1>
           <h2 className="text-2xl md:text-3xl font-light mb-4 font-museo">
             Moderne coworking space og kontorfellesskap
@@ -69,8 +69,8 @@ export const HeroSection = () => (
           <div className="relative">
             <div className="absolute inset-0 bg-hub-blue-light opacity-30 filter blur-xl rounded-full"></div>
             <img 
-              src={getImagePath("/images/logo-white.png")} 
-              alt="HUB Phønix" 
+              src={getImagePath("/img/HUB PHONIX LOGO HVIT.png")} 
+              alt="HUB Phonix" 
               className="relative z-10 w-3/4 md:w-auto max-h-80 object-contain filter drop-shadow-2xl transform hover:rotate-3 transition-transform duration-500"
             />
           </div>

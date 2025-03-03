@@ -88,7 +88,7 @@ export const ContactSection = () => {
             Kontakt Oss
           </h2>
           <p className="text-white max-w-2xl mx-auto">
-            Har du spørsmål om HUB Phønix eller ønsker du å vite mer om våre tjenester? 
+            Har du spørsmål om HUB Phonix eller ønsker du å vite mer om våre tjenester? 
             Ta kontakt med oss, så hjelper vi deg gjerne.
           </p>
         </div>
