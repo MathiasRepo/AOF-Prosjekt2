@@ -1,37 +1,32 @@
 "use client";
 
-import React, { useEffect, useState, useMemo } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { cn } from "../../../lib/utils";
 import { clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
-
-// Import images directly
-import hubPhonixLogo from "/images/logos/partners/hvit_logo-1024x214.png";
-import idgLogo from "/images/logos/partners/IDG_Logo_Horizontal_Text_Black.png";
-import ncceLogo from "/images/logos/partners/logo-ncce-no.png";
-import mobilLogo from "/images/logos/partners/mobillogo.png";
 
 // Default logos with real images
 const DEFAULT_LOGOS = [
   {
     id: 1,
     name: "HUB Phønix",
-    logo: hubPhonixLogo,
+    logo: "/images/logos/partners/hvit_logo-1024x214.png",
   },
   {
     id: 2,
     name: "IDG",
-    logo: idgLogo,
+    logo: "/images/logos/partners/IDG_Logo_Horizontal_Text_Black.png",
   },
   {
     id: 3,
     name: "NCCE",
-    logo: ncceLogo,
+    logo: "/images/logos/partners/logo-ncce-no.png",
   },
   {
     id: 4,
     name: "Mobile",
-    logo: mobilLogo,
+    logo: "/images/logos/partners/mobillogo.png",
   },
 ];
 
