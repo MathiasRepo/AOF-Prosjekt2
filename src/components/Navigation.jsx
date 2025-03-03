@@ -3,15 +3,20 @@ import { getImagePath } from '../utils/imagePath';
 
 export const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      setIsScrolled(window.scrollY > 10);
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
     <header
@@ -26,8 +31,8 @@ export const Navigation = () => {
         <div className="flex-1">
           <img
             src={getImagePath(isScrolled 
-                ? "/img/HUB PHØNIX LOGO FRG.png"
-                : "/img/HUB PHØNIX LOGO HVIT.png")}
+                ? "/images/logo-color.png"
+                : "/images/logo-white.png")}
             alt="HUB Phønix Logo"
             className="h-12 transition-all duration-300"
           />

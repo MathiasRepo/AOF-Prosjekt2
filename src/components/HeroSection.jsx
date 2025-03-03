@@ -6,7 +6,7 @@ export const HeroSection = () => (
     {/* Background elements removed - now shared in App.jsx */}
     
     <div className="container mx-auto px-6 relative z-10 mb-8">
-      <div className="flex flex-col md:flex-row items-center">
+      <div className="flex flex-col md:flex-row items-center justify-between">
         <div className="md:w-1/2 text-center md:text-left text-white">
           <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-2 font-museo">
             HUB Phønix
@@ -64,12 +64,12 @@ export const HeroSection = () => (
           </div>
         </div>
         
-        <div className="md:w-1/2 mt-12 md:mt-0 flex justify-center relative">
+        <div className="md:w-1/2 mt-12 md:mt-0 flex justify-center md:justify-end">
           {/* Main logo with glow effect */}
           <div className="relative">
             <div className="absolute inset-0 bg-hub-blue-light opacity-30 filter blur-xl rounded-full"></div>
             <img 
-              src={getImagePath("/img/HUB PHØNIX LOGO HVIT.png")} 
+              src={getImagePath("/images/logo-white.png")} 
               alt="HUB Phønix" 
               className="relative z-10 w-3/4 md:w-auto max-h-80 object-contain filter drop-shadow-2xl transform hover:rotate-3 transition-transform duration-500"
             />

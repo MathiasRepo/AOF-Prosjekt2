@@ -11,7 +11,7 @@ export const Footer = () => {
           {/* Logo and About */}
           <div>
             <div className="mb-4">
-              <img src={getImagePath("/img/HUB PHØNIX LOGO HVIT.png")} alt="HUB Phønix" className="h-12" />
+              <img src={getImagePath("/images/logo-white.png")} alt="HUB Phønix" className="h-12" />
             </div>
             <p className="text-gray-300 mb-6">
               Et moderne coworking space og kontorfellesskap i hjertet av Fredrikstad.
