@@ -6,27 +6,30 @@ import { cn } from "../../../lib/utils";
 import { clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 
+// Get the base URL from Vite's environment
+const baseUrl = import.meta.env.BASE_URL;
+
 // Default logos with real images
 const DEFAULT_LOGOS = [
   {
     id: 1,
     name: "HUB Phønix",
-    logo: "./images/logos/partners/hvit_logo-1024x214.png",
+    logo: `${baseUrl}images/logos/partners/hvit_logo-1024x214.png`,
   },
   {
     id: 2,
     name: "IDG",
-    logo: "./images/logos/partners/IDG_Logo_Horizontal_Text_Black.png",
+    logo: `${baseUrl}images/logos/partners/IDG_Logo_Horizontal_Text_Black.png`,
   },
   {
     id: 3,
     name: "NCCE",
-    logo: "./images/logos/partners/logo-ncce-no.png",
+    logo: `${baseUrl}images/logos/partners/logo-ncce-no.png`,
   },
   {
     id: 4,
     name: "Mobile",
-    logo: "./images/logos/partners/mobillogo.png",
+    logo: `${baseUrl}images/logos/partners/mobillogo.png`,
   },
 ];
 
