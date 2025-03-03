@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const HeroSection = () => (
-  <section className="relative flex items-center overflow-hidden z-10 pb-16 h-auto pt-32">
+  <section className="relative flex items-center overflow-hidden z-10 pb-32 pt-56">
     {/* Background elements removed - now shared in App.jsx */}
     
     <div className="container mx-auto px-6 relative z-10 mb-8">
