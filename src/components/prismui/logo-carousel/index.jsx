@@ -5,23 +5,27 @@ import { motion, AnimatePresence } from "framer-motion";
 import { clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 
-// Default logos with placeholder images
+// Default logos with real images
 const DEFAULT_LOGOS = [
   {
     id: 1,
-    name: "Oslo Kommune",
-    logo: "https://via.placeholder.com/150x80?text=Oslo+Kommune",
+    name: "HUB Phønix",
+    logo: "/images/logos/partners/hvit_logo-1024x214.png",
   },
   {
     id: 2,
-    name: "Innovasjon Norge",
-    logo: "https://via.placeholder.com/150x80?text=Innovasjon+Norge",
+    name: "IDG",
+    logo: "/images/logos/partners/IDG_Logo_Horizontal_Text_Black.png",
   },
-  { id: 3, name: "DNB", logo: "https://via.placeholder.com/150x80?text=DNB" },
+  {
+    id: 3,
+    name: "NCCE",
+    logo: "/images/logos/partners/logo-ncce-no.png",
+  },
   {
     id: 4,
-    name: "Telenor",
-    logo: "https://via.placeholder.com/150x80?text=Telenor",
+    name: "Mobile",
+    logo: "/images/logos/partners/mobillogo.png",
   },
   {
     id: 5,
@@ -158,7 +162,7 @@ export const LogoCarousel = ({
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-museo drop-shadow-[0_2px_6px_rgba(0,0,0,0.2)]">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-museo drop-shadow-[0_1px_1px_rgba(0,0,0,0.2)]">
             Våre Samarbeidspartnere
           </h2>
           <p className="text-white max-w-2xl mx-auto">
