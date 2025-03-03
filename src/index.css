@@ -1,5 +1,11 @@
 /* Import Museo Sans font */
-@import url('https://use.typekit.net/eqc8cjj.css'); /* This is a placeholder Adobe Fonts link - replace with actual Museo Sans import */
+@font-face {
+  font-family: 'Museo Sans';
+  src: url('/font/MuseoSans_500.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 
 /* Tailwind directives */
 @tailwind base;
