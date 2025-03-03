@@ -55,10 +55,16 @@ export const HeroSection = () => (
           </div>
           
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start mb-8">
-            <a href="#booking" className="bg-white text-hub-blue-dark hover:bg-hub-gray px-8 py-3 rounded-md font-medium transition-colors shadow-lg transform hover:scale-105 duration-200">
+            <a 
+              href="#booking" 
+              className="inline-block bg-white text-hub-blue-dark hover:bg-hub-gray px-8 py-3 rounded-md font-medium transition-all duration-200 shadow-lg hover:scale-105 text-center"
+            >
               Book nå
             </a>
-            <a href="#kontakt" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-hub-blue-dark px-8 py-3 rounded-md font-medium transition-colors">
+            <a 
+              href="#kontakt" 
+              className="inline-block bg-transparent border-2 border-white text-white hover:bg-white hover:text-hub-blue-dark px-8 py-3 rounded-md font-medium transition-all duration-200 text-center"
+            >
               Kontakt oss
             </a>
           </div>
