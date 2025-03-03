@@ -5,50 +5,37 @@ import { motion, AnimatePresence } from "framer-motion";
 import { clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 
+// Import images directly
+import hubPhonixLogo from "/images/logos/partners/hvit_logo-1024x214.png";
+import idgLogo from "/images/logos/partners/IDG_Logo_Horizontal_Text_Black.png";
+import ncceLogo from "/images/logos/partners/logo-ncce-no.png";
+import mobilLogo from "/images/logos/partners/mobillogo.png";
+
 // Default logos with real images
 const DEFAULT_LOGOS = [
   {
     id: 1,
     name: "HUB Phønix",
-    logo: "/images/logos/partners/hvit_logo-1024x214.png",
+    logo: hubPhonixLogo,
   },
   {
     id: 2,
     name: "IDG",
-    logo: "/images/logos/partners/IDG_Logo_Horizontal_Text_Black.png",
+    logo: idgLogo,
   },
   {
     id: 3,
     name: "NCCE",
-    logo: "/images/logos/partners/logo-ncce-no.png",
+    logo: ncceLogo,
   },
   {
     id: 4,
     name: "Mobile",
-    logo: "/images/logos/partners/mobillogo.png",
-  },
-  {
-    id: 5,
-    name: "Equinor",
-    logo: "https://via.placeholder.com/150x80?text=Equinor",
-  },
-  { id: 6, name: "NTNU", logo: "https://via.placeholder.com/150x80?text=NTNU" },
-  {
-    id: 7,
-    name: "Sintef",
-    logo: "https://via.placeholder.com/150x80?text=Sintef",
-  },
-  {
-    id: 8,
-    name: "Sparebank1",
-    logo: "https://via.placeholder.com/150x80?text=Sparebank1",
-  },
-  {
-    id: 9,
-    name: "Vipps",
-    logo: "https://via.placeholder.com/150x80?text=Vipps",
+    logo: mobilLogo,
   },
 ];
+
+console.log("Image paths:", DEFAULT_LOGOS.map(p => p.logo));
 
 // Animation settings
 const CYCLE_DURATION = 3000; // 3 seconds per logo
@@ -61,7 +48,7 @@ const Logo = ({ logo, isActive }) => {
       {isActive && (
         <motion.div
           key={logo.id}
-          className="absolute inset-0 flex items-center justify-center"
+          className="absolute inset-0 flex items-center justify-center rounded-lg m-2"
           initial={{ y: "10%", opacity: 0 }}
           animate={{
             y: "0%",
@@ -85,7 +72,7 @@ const Logo = ({ logo, isActive }) => {
           <img
             src={logo.logo}
             alt={logo.name}
-            className="max-h-full max-w-full object-contain"
+            className="max-h-[80%] max-w-[80%] object-contain p-2"
           />
         </motion.div>
       )}
@@ -188,7 +175,7 @@ export const LogoCarousel = ({
           {logoColumns.map((column, columnIndex) => (
             <div
               key={`column-${columnIndex}`}
-              className="relative h-32 bg-white bg-opacity-10 backdrop-blur-sm rounded-lg shadow-lg overflow-hidden border border-white border-opacity-20 transform transition-transform hover:scale-105 duration-300"
+              className="relative h-40 bg-white bg-opacity-10 backdrop-blur-sm rounded-lg shadow-lg overflow-hidden border border-white border-opacity-20 transform transition-transform hover:scale-105 duration-300"
             >
               {column.map((logo, logoIndex) => (
                 <Logo
