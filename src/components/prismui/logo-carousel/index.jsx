@@ -11,22 +11,22 @@ const DEFAULT_LOGOS = [
   {
     id: 1,
     name: "HUB Phønix",
-    logo: "/images/logos/partners/hvit_logo-1024x214.png",
+    logo: "./images/logos/partners/hvit_logo-1024x214.png",
   },
   {
     id: 2,
     name: "IDG",
-    logo: "/images/logos/partners/IDG_Logo_Horizontal_Text_Black.png",
+    logo: "./images/logos/partners/IDG_Logo_Horizontal_Text_Black.png",
   },
   {
     id: 3,
     name: "NCCE",
-    logo: "/images/logos/partners/logo-ncce-no.png",
+    logo: "./images/logos/partners/logo-ncce-no.png",
   },
   {
     id: 4,
     name: "Mobile",
-    logo: "/images/logos/partners/mobillogo.png",
+    logo: "./images/logos/partners/mobillogo.png",
   },
 ];
 
