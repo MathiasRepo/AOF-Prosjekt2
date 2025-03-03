@@ -1,4 +1,5 @@
 import React from 'react';
+import { getImagePath } from '../utils/imagePath';
 
 export const HeroSection = () => (
   <section className="relative flex items-center overflow-hidden z-10 pb-32 pt-56">
@@ -68,7 +69,7 @@ export const HeroSection = () => (
           <div className="relative">
             <div className="absolute inset-0 bg-hub-blue-light opacity-30 filter blur-xl rounded-full"></div>
             <img 
-              src="/img/HUB PHØNIX LOGO HVIT.png" 
+              src={getImagePath("/img/HUB PHØNIX LOGO HVIT.png")} 
               alt="HUB Phønix" 
               className="relative z-10 w-3/4 md:w-auto max-h-80 object-contain filter drop-shadow-2xl transform hover:rotate-3 transition-transform duration-500"
             />

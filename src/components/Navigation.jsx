@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { getImagePath } from '../utils/imagePath';
 
 export const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -24,11 +25,9 @@ export const Navigation = () => {
       >
         <div className="flex-1">
           <img
-            src={
-              isScrolled
+            src={getImagePath(isScrolled 
                 ? "/img/HUB PHØNIX LOGO FRG.png"
-                : "/img/HUB PHØNIX LOGO HVIT.png"
-            }
+                : "/img/HUB PHØNIX LOGO HVIT.png")}
             alt="HUB Phønix Logo"
             className="h-12 transition-all duration-300"
           />
