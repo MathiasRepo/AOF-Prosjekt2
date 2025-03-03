@@ -1,28 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 export const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  // Show button when page is scrolled down
   const toggleVisibility = () => {
-    if (window.pageYOffset > 300) {
-      setIsVisible(true);
-    } else {
-      setIsVisible(false);
-    }
+    setIsVisible(window.pageYOffset > 200);
   };
 
-  // Set the scroll event listener
-  useEffect(() => {
-    window.addEventListener('scroll', toggleVisibility);
-    
-    // Clean up the event listener on component unmount
-    return () => {
-      window.removeEventListener('scroll', toggleVisibility);
-    };
-  }, []);
-
-  // Scroll to top function
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -30,15 +14,35 @@ export const ScrollToTop = () => {
     });
   };
 
+  useEffect(() => {
+    window.addEventListener('scroll', toggleVisibility);
+    return () => window.removeEventListener('scroll', toggleVisibility);
+  }, []);
+
   return (
-    <section className={`button-up fixed bottom-8 right-8 transition-opacity duration-300 ${isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
-      <button 
-        onClick={scrollToTop}
-        aria-label="Scroll to top" 
-        className="bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition-colors transform hover:scale-110"
-      >
-        <i className="fas fa-arrow-up"></i>
-      </button>
-    </section>
+    <div className="fixed bottom-8 right-8 z-50">
+      {isVisible && (
+        <button
+          onClick={scrollToTop}
+          className="p-3 bg-hub-blue text-white rounded-full shadow-lg hover:bg-hub-blue-dark transition-colors"
+          aria-label="Scroll to top"
+        >
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M5 15l7-7 7 7"
+            />
+          </svg>
+        </button>
+      )}
+    </div>
   );
 };
