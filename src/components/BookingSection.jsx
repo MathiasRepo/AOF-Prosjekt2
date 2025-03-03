@@ -1,8 +1,8 @@
 import React from 'react';
 
 export const BookingSection = () => (
-  <section>
-    <h1 className="text-4xl font-bold text-center mb-8 mt-24">Book din time</h1>
+  <section id="booking">
+    <h1 className="text-4xl font-bold text-center mb-8 mt-24">Book ditt kontorplass</h1>
     <div className="w-full h-[820px] overflow-hidden my-12">
       <div className="-mt-[16%] w-full h-[110%]">
         <iframe

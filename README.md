@@ -1,49 +1,17 @@
-# AOF Østlandet Nettside 🎓
+# HUB Phønix Nettside 🏢
 
-## 🗺️ Produktveikart
-> *Fremtidige forbedringer og nye funksjoner*
-
-### 🎯 Brukeropplevelse
-| Status | Funksjon | Beskrivelse |
-|:------:|----------|-------------|
-| ⭐ | **Kurskatalog** | Søkbar oversikt over alle kurs |
-| 🔄 | **Påmeldingsportal** | Enkel påmelding og registrering |
-| 🔜 | **Live Chat** | Kundeservice og support |
-| 🔜 | **FAQ-seksjon** | Ofte stilte spørsmål |
-| 📅 | **Nyhetsbrev** | Oppdateringer og nyheter |
-
-### 📚 Kursadministrasjon
-| Status | Funksjon | Beskrivelse |
-|:------:|----------|-------------|
-| 🔄 | **Kursevaluering** | Tilbakemeldingssystem |
-| 🔜 | **Kurshistorikk** | Oversikt over gjennomførte kurs |
-| 📅 | **Digitale Kursbevis** | Automatiske kursbevis |
-| 🔜 | **Ressursbibliotek** | Kursmaterialer og ressurser |
-
-### ⚡ Interaktive Elementer
-| Status | Funksjon | Beskrivelse |
-|:------:|----------|-------------|
-| 🔄 | **Virtuell Omvisning** | 360° visning av lokaler |
-| 🔜 | **Kalenderintegrasjon** | Synkroniser med din kalender |
-| 📅 | **Delingsknapper** | Del på sosiale medier |
-| 🔜 | **Progresjonssporing** | Følg din fremgang |
-
-### 🔧 Administrativt
-| Status | Funksjon | Beskrivelse |
-|:------:|----------|-------------|
-| ⭐ | **Instruktørprofiler** | Presentasjon av kursholdere |
-| 🔄 | **Bedriftsportal** | For bedriftskunder |
-| 🔜 | **Påminnelser** | SMS/E-post varsler |
-| 📅 | **Venteliste** | Automatisk køsystem |
-
-#### Symbolforklaring
-⭐ Ferdig
-🔄 Under utvikling
-🔜 Kommer snart
-📅 Planlagt
+## ✨ Fremtidige Forbedringer
+- [ ] Implementere mørk modus
+- [ ] Legge til flere språkalternativer
+- [ ] Utvide bookingsystemet med flere funksjoner
+- [ ] Legge til en blogseksjon for nyheter og oppdateringer
+- [ ] Virtuell omvisning av lokalene
+- [ ] Kalenderintegrasjon for arrangementer
+- [ ] Delingsknapper for sosiale medier
+- [ ] Automatiske påminnelser for bookinger
 
 ## Om Prosjektet
-Dette er den offisielle nettsiden for AOF Østlandet, utviklet med moderne webteknologier for å gi brukerne en sømløs opplevelse ved booking av kurs og tjenester.
+Dette er den offisielle nettsiden for HUB Phønix, et moderne coworking space og kontorfellesskap. Nettsiden er utviklet med moderne webteknologier for å gi brukerne en sømløs opplevelse ved booking av kontorplasser og tjenester.
 
 ## 🚀 Teknologier
 - **React** - For dynamiske brukergrensesnitt
@@ -52,23 +20,32 @@ Dette er den offisielle nettsiden for AOF Østlandet, utviklet med moderne webte
 
 ## 📋 Funksjoner
 - Moderne og responsivt design
-- Integrert bookingsystem
+- Integrert bookingsystem for kontorplasser
 - Kontaktskjema
 - Sosiale medier-integrasjon
 - Scroll-to-top funksjonalitet
 
 ## 🛠️ Prosjektstruktur
 ```
-AOF-Prosjekt2/
-├── index.html      # Hovedfil med React-komponenter
-├── style.css       # Tilpassede CSS-stiler
-├── script.js       # JavaScript-utvidelser
-└── README.md       # Prosjektdokumentasjon
+HUB-Phønix/
+├── public/               # Statiske filer
+│   ├── index.html       # HTML-hovedfil
+│   └── img/             # Bilder og logoer
+├── src/                 # Kildekode
+│   ├── components/      # React-komponenter
+│   ├── assets/          # Andre ressurser
+│   ├── hooks/           # Egendefinerte React hooks
+│   ├── utils/           # Hjelpefunksjoner
+│   ├── App.jsx          # Hovedapplikasjonskomponent
+│   ├── index.jsx        # Applikasjonens startpunkt
+│   └── index.css        # Globale CSS-stiler
+├── package.json         # Prosjektavhengigheter
+└── README.md            # Prosjektdokumentasjon
 ```
 
 ## 📦 React-komponenter
 - `Navigation` - Hovednavigasjon
-- `HeroSection` - Toppbanner med AOF Østlandet
+- `HeroSection` - Toppbanner med HUB Phønix
 - `BookingSection` - Integrert bookingsystem
 - `ContactSection` - Kontaktinformasjon
 - `ScrollToTop` - Tilbake til toppen-knapp
@@ -77,21 +54,28 @@ AOF-Prosjekt2/
 ## 🚀 Kom i Gang
 
 ### Forutsetninger
-- En moderne nettleser
-- Grunnleggende kjennskap til webutvikling
+- Node.js (versjon 14 eller nyere)
+- npm eller yarn
 
 ### Installasjon
 1. Klon prosjektet:
    ```bash
-   git clone https://github.com/YourUsername/AOF-Prosjekt2.git
+   git clone https://github.com/YourUsername/HUB-Phønix.git
    ```
-2. Åpne `index.html` i din foretrukne nettleser
+2. Installer avhengigheter:
+   ```bash
+   npm install
+   ```
+3. Start utviklingsserveren:
+   ```bash
+   npm run dev
+   ```
 
-### Utvikling
-For å starte med utvikling:
-1. Gjør endringer i React-komponentene i `index.html`
-2. Tilpass stiler i `style.css`
-3. Legg til nye funksjoner i `script.js`
+### Bygg for produksjon
+For å bygge prosjektet for produksjon:
+```bash
+npm run build
+```
 
 ## 🔧 Tilpasning
 - Endre farger og stiler via Tailwind-klasser
@@ -101,32 +85,26 @@ For å starte med utvikling:
 ## 📱 Responsivt Design
 Nettsiden er fullt responsiv og fungerer på alle enheter:
 - Desktop 💻
-- Tablet 📱
+- Nettbrett 📱
 - Mobil 📱
 
 ## 🤝 Bidrag
 Ønsker du å bidra? Flott! 
 1. Fork prosjektet
-2. Opprett en feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit endringene dine (`git commit -m 'Add some AmazingFeature'`)
-4. Push til branchen (`git push origin feature/AmazingFeature`)
+2. Opprett en feature branch (`git checkout -b feature/NyFunksjonalitet`)
+3. Commit endringene dine (`git commit -m 'Legg til ny funksjonalitet'`)
+4. Push til branchen (`git push origin feature/NyFunksjonalitet`)
 5. Åpne en Pull Request
 
 ## 📝 Lisens
 Dette prosjektet er lisensiert under MIT-lisensen.
 
-## ✨ Fremtidige Forbedringer
-- [ ] Implementere dark mode
-- [ ] Legge til flere språkalternativer
-- [ ] Utvide bookingsystemet med flere funksjoner
-- [ ] Legge til en blogseksjon for nyheter og oppdateringer
-
 ## 📞 Kontakt
 For spørsmål eller støtte, vennligst kontakt oss via:
-- [AOF Østlandet Nettside](https://www.aof.no)
+- [HUB Phønix Nettside](https://www.hubphoenix.no)
 - [LinkedIn](#)
 - [Facebook](#)
 - [Instagram](#)
 
 ---
-Laget med ❤️ for AOF Østlandet
+Laget med ❤️ for HUB Phønix
