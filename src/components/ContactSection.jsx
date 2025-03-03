@@ -81,18 +81,15 @@ export const ContactSection = () => {
   };
   
   return (
-    <section id="kontakt" className="relative flex items-center overflow-hidden z-10 pb-40 pt-40">
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-museo drop-shadow-[0_2px_2px_rgba(0,0,0,0.1)]">
-            Kontakt Oss
-          </h2>
-          <p className="text-white max-w-2xl mx-auto">
-            Har du spørsmål om HUB Phonix eller ønsker du å vite mer om våre tjenester? 
-            Ta kontakt med oss, så hjelper vi deg gjerne.
+    <section id="kontakt" className="py-20 bg-white relative z-10">
+      <div className="container mx-auto px-6">
+        <div className="max-w-4xl mx-auto text-center mb-16">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4 font-museo">Kontakt oss</h2>
+          <p className="text-xl text-gray-600">
+            Har du spørsmål om HUB Phønix eller ønsker du å vite mer om våre tjenester?
           </p>
         </div>
-          
+        
         <div className="flex flex-col lg:flex-row gap-12">
           {/* Contact Form */}
           <div className="lg:w-3/5 bg-white bg-opacity-10 backdrop-blur-sm rounded-xl shadow-xl p-8 border border-white border-opacity-20">

@@ -11,7 +11,7 @@ export const Footer = () => {
           {/* Logo and About */}
           <div>
             <div className="mb-4">
-              <img src={getImagePath("/img/HUB PHONIX LOGO HVIT.png")} alt="HUB Phonix" className="h-12" />
+              <img src={getImagePath("/img/HUB PHONIX LOGO HVIT.png")} alt="HUB Phønix" className="h-12" />
             </div>
             <p className="text-gray-300 mb-6">
               Et moderne coworking space og kontorfellesskap i hjertet av Fredrikstad.
@@ -114,8 +114,17 @@ export const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-gray-700 mt-16 pt-8 text-center text-gray-400">
-          <p>&copy; {currentYear} HUB Phonix. Alle rettigheter reservert.</p>
+        <div className="border-t border-gray-700 mt-12 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <p className="text-gray-400 text-sm mb-4 md:mb-0">
+              &copy; {currentYear} HUB Phønix. Alle rettigheter reservert.
+            </p>
+            <div className="flex space-x-6">
+              <a href="#" className="text-gray-400 hover:text-hub-blue-light text-sm transition-colors">Personvern</a>
+              <a href="#" className="text-gray-400 hover:text-hub-blue-light text-sm transition-colors">Vilkår</a>
+              <a href="#" className="text-gray-400 hover:text-hub-blue-light text-sm transition-colors">Cookies</a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

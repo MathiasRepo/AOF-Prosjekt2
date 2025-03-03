@@ -33,7 +33,7 @@ export const Navigation = () => {
             src={getImagePath(isScrolled 
                 ? "/img/HUB PHONIX LOGO FRG.png"
                 : "/img/HUB PHONIX LOGO HVIT.png")}
-            alt="HUB Phonix Logo"
+            alt="HUB Phønix Logo"
             className="h-12 transition-all duration-300"
           />
         </div>
