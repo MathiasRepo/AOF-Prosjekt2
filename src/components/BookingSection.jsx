@@ -11,7 +11,7 @@ export const BookingSection = () => (
       <iframe
         scrolling="no"
         frameBorder="0"
-        src="https://supersaas.com/schedule/Slowboii/HUB_Ph%C3%B8nix"
+        src="https://www.supersaas.com/schedule/Slowboii/HUB_Ph%C3%B8nix?partitioned=1" width="100%" height="800"
       />
     </div>
   </section>
