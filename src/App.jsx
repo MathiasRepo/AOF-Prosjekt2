@@ -6,6 +6,7 @@ import { BookingSection } from './components/BookingSection';
 import { ContactSection } from './components/ContactSection';
 import { ScrollToTop } from './components/ScrollToTop';
 import { Footer } from './components/Footer';
+import ImgCarousel from './components/imgCarousel';
 
 export const App = () => (
   <main className="min-h-screen">
@@ -50,6 +51,7 @@ export const App = () => (
         </svg>
       </div>
     </div>
+    <ImgCarousel />
     <BookingSection />
     
     {/* Contact section with matching styling */}

@@ -31,6 +31,11 @@ const DEFAULT_LOGOS = [
     name: "Mobile",
     logo: `${baseUrl}images/logos/partners/mobillogo.png`,
   },
+  {
+    id: 5,
+    name: "Borg Havn",
+    logo: `${baseUrl}images/logos/partners/borghavn.png`,
+  },
 ];
 
 console.log("Image paths:", DEFAULT_LOGOS.map(p => p.logo));
