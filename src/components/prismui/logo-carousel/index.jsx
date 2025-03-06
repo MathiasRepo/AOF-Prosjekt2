@@ -18,17 +18,17 @@ const DEFAULT_LOGOS = [
   },
   {
     id: 2,
-    name: "IDG",
+    name: "Inner Development Goals",
     logo: `${baseUrl}images/logos/partners/IDG_Logo_Horizontal_Text_Black.png`,
   },
   {
     id: 3,
-    name: "NCCE",
+    name: "Norsk Senter for Sirkulær Økonomi",
     logo: `${baseUrl}images/logos/partners/logo-ncce-no.png`,
   },
   {
     id: 4,
-    name: "Mobile",
+    name: "Visit Fredrikstad & Hvaler",
     logo: `${baseUrl}images/logos/partners/mobillogo.png`,
   },
   {
