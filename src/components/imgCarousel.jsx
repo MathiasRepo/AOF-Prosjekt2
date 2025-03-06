@@ -10,8 +10,8 @@ const ImgCarousel = () => {
                 <p className="legend">Åpning av HUB Phønix</p>
             </div>
             <div>
-            <img src={`${import.meta.env.BASE_URL}img/apning.jpg`} alt="Åpning av HUB Phønix" />
-            <p className="legend">Bilde 2 av HUB Phønix</p>
+                <img src={`${import.meta.env.BASE_URL}img/apning.jpg`} alt="Åpning av HUB Phønix" />
+                <p className="legend">Bilde 2 av HUB Phønix</p>
             </div>
         </Carousel>
     )
