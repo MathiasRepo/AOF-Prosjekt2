@@ -7,6 +7,7 @@ import { ContactSection } from './components/ContactSection';
 import { ScrollToTop } from './components/ScrollToTop';
 import { Footer } from './components/Footer';
 import ImgCarousel from './components/imgCarousel';
+import ControlledAccordions from './components/Accordion';
 
 export const App = () => (
   <main className="min-h-screen">
