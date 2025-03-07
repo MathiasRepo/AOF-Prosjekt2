@@ -95,3 +95,5 @@ export default function ControlledAccordions() {
     </div>
   );
 }
+
+export { ControlledAccordions };
