@@ -52,6 +52,7 @@ export const App = () => (
       </div>
     </div>
     <ImgCarousel />
+    <ControlledAccordions/>
     <BookingSection />
     
     {/* Contact section with matching styling */}
