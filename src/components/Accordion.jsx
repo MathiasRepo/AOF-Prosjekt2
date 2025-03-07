@@ -6,12 +6,11 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 export default function ControlledAccordions() {
-  const [expanded, setExpanded] = React.useState<string | false>(false);
+  const [expanded, setExpanded] = React.useState(false);
 
-  const handleChange =
-    (panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {
-      setExpanded(isExpanded ? panel : false);
-    };
+  const handleChange = (panel) => (event, isExpanded) => {
+    setExpanded(isExpanded ? panel : false);
+  };
 
   return (
     <div>
