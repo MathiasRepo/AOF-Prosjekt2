@@ -4,7 +4,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const ImgCarousel = () => {
     return (
-        <Carousel infiniteLoop={true} autoPlay={true} interval={3000} width="75%">
+        <Carousel className="mr-auto ml-auto" infiniteLoop={true} autoPlay={true} interval={3000} width="75%">
             <div>
                 <img src={`${import.meta.env.BASE_URL}img/apning.jpg`} alt="Åpning av HUB Phønix" />
                 <p className="legend">Åpning av HUB Phønix</p>
