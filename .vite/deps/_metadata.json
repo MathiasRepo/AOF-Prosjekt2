@@ -1,0 +1,145 @@
+{
+  "hash": "b2565e7c",
+  "configHash": "6f373810",
+  "lockfileHash": "4d9a9274",
+  "browserHash": "47df21e4",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "8dedc52b",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "b366f54c",
+      "needsInterop": true
+    },
+    "@mui/material/Accordion": {
+      "src": "../../node_modules/@mui/material/Accordion/index.js",
+      "file": "@mui_material_Accordion.js",
+      "fileHash": "5a80baea",
+      "needsInterop": false
+    },
+    "@mui/material/AccordionDetails": {
+      "src": "../../node_modules/@mui/material/AccordionDetails/index.js",
+      "file": "@mui_material_AccordionDetails.js",
+      "fileHash": "2d82a79e",
+      "needsInterop": false
+    },
+    "@mui/material/AccordionSummary": {
+      "src": "../../node_modules/@mui/material/AccordionSummary/index.js",
+      "file": "@mui_material_AccordionSummary.js",
+      "fileHash": "48db8d05",
+      "needsInterop": false
+    },
+    "@mui/material/Typography": {
+      "src": "../../node_modules/@mui/material/Typography/index.js",
+      "file": "@mui_material_Typography.js",
+      "fileHash": "638a9800",
+      "needsInterop": false
+    },
+    "@mui/icons-material/ExpandMore": {
+      "src": "../../node_modules/@mui/icons-material/esm/ExpandMore.js",
+      "file": "@mui_icons-material_ExpandMore.js",
+      "fileHash": "fa911be3",
+      "needsInterop": false
+    },
+    "react-responsive-carousel": {
+      "src": "../../node_modules/react-responsive-carousel/lib/js/index.js",
+      "file": "react-responsive-carousel.js",
+      "fileHash": "64a4400e",
+      "needsInterop": true
+    },
+    "framer-motion": {
+      "src": "../../node_modules/framer-motion/dist/es/index.mjs",
+      "file": "framer-motion.js",
+      "fileHash": "6d940a96",
+      "needsInterop": false
+    },
+    "clsx": {
+      "src": "../../node_modules/clsx/dist/clsx.mjs",
+      "file": "clsx.js",
+      "fileHash": "d9ce06f7",
+      "needsInterop": false
+    },
+    "tailwind-merge": {
+      "src": "../../node_modules/tailwind-merge/dist/bundle-mjs.mjs",
+      "file": "tailwind-merge.js",
+      "fileHash": "746968b9",
+      "needsInterop": false
+    },
+    "@radix-ui/react-accordion": {
+      "src": "../../node_modules/@radix-ui/react-accordion/dist/index.mjs",
+      "file": "@radix-ui_react-accordion.js",
+      "fileHash": "91e1293d",
+      "needsInterop": false
+    },
+    "lucide-react": {
+      "src": "../../node_modules/lucide-react/dist/esm/lucide-react.js",
+      "file": "lucide-react.js",
+      "fileHash": "1573d176",
+      "needsInterop": false
+    },
+    "embla-carousel-react": {
+      "src": "../../node_modules/embla-carousel-react/esm/embla-carousel-react.esm.js",
+      "file": "embla-carousel-react.js",
+      "fileHash": "7522a6df",
+      "needsInterop": false
+    },
+    "@radix-ui/react-slot": {
+      "src": "../../node_modules/@radix-ui/react-slot/dist/index.mjs",
+      "file": "@radix-ui_react-slot.js",
+      "fileHash": "31554d44",
+      "needsInterop": false
+    },
+    "class-variance-authority": {
+      "src": "../../node_modules/class-variance-authority/dist/index.mjs",
+      "file": "class-variance-authority.js",
+      "fileHash": "ee60ceb4",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-AATXYF4R": {
+      "file": "chunk-AATXYF4R.js"
+    },
+    "chunk-HUCQETOT": {
+      "file": "chunk-HUCQETOT.js"
+    },
+    "chunk-2M7ZFYKC": {
+      "file": "chunk-2M7ZFYKC.js"
+    },
+    "chunk-M7P44NLL": {
+      "file": "chunk-M7P44NLL.js"
+    },
+    "chunk-EFVTFYZD": {
+      "file": "chunk-EFVTFYZD.js"
+    },
+    "chunk-UHINIFCJ": {
+      "file": "chunk-UHINIFCJ.js"
+    },
+    "chunk-LMGP3W3R": {
+      "file": "chunk-LMGP3W3R.js"
+    },
+    "chunk-LEEEA7JD": {
+      "file": "chunk-LEEEA7JD.js"
+    },
+    "chunk-KDVGFZWC": {
+      "file": "chunk-KDVGFZWC.js"
+    },
+    "chunk-RGNGTCU6": {
+      "file": "chunk-RGNGTCU6.js"
+    },
+    "chunk-6H6IX42F": {
+      "file": "chunk-6H6IX42F.js"
+    },
+    "chunk-W4EHDCLL": {
+      "file": "chunk-W4EHDCLL.js"
+    },
+    "chunk-EWTE5DHJ": {
+      "file": "chunk-EWTE5DHJ.js"
+    }
+  }
+}

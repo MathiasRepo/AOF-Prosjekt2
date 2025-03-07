@@ -1,7 +1,7 @@
 /* Import Museo Sans font */
 @font-face {
   font-family: 'Museo Sans';
-  src: url('/font/MuseoSans_500.otf') format('opentype');
+  src: url('./font/MuseoSans_500.otf') format('opentype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;

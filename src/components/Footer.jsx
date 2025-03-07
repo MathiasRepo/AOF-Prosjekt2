@@ -95,26 +95,33 @@ export const Footer = () => {
           {/* Newsletter */}
           <div>
             <h3 className="text-lg font-semibold mb-4 font-museo">Nyhetsbrev</h3>
-            <p className="text-gray-300 mb-4">
-              Meld deg på vårt nyhetsbrev for å få siste nytt og oppdateringer.
+            <p className="text-gray-300 mb-6">
+              Hold deg oppdatert med siste nytt fra HUB Phønix.
             </p>
-            <form className="flex flex-col sm:flex-row">
-              <input 
-                type="email" 
-                placeholder="Din e-post" 
-                className="px-4 py-2 w-full sm:w-auto rounded-md sm:rounded-r-none focus:outline-none focus:ring-2 focus:ring-hub-blue mb-2 sm:mb-0" 
-              />
-              <button 
-                type="submit" 
-                className="bg-hub-blue hover:bg-hub-blue-dark text-white px-4 py-2 rounded-md sm:rounded-l-none transition-colors"
-              >
-                Meld på
-              </button>
+            <form className="space-y-3">
+              <div className="relative">
+                <input 
+                  type="email" 
+                  placeholder="Din e-post" 
+                  className="w-full px-5 py-3 rounded-2xl bg-white/5 border-2 border-white/10 backdrop-blur-sm text-white placeholder-white/40 focus:outline-none focus:border-hub-blue-light focus:ring-1 focus:ring-hub-blue-light transition-all duration-300" 
+                />
+                <button 
+                  type="submit" 
+                  className="mt-3 w-full bg-white/10 backdrop-blur-sm text-white px-6 py-3 rounded-2xl transition-all duration-300 border-2 border-white/30 hover:border-white/50 hover:bg-white/20 shadow-[0_4px_16px_rgba(255,255,255,0.1)] hover:shadow-[0_8px_32px_rgba(255,255,255,0.2)] transform hover:scale-[1.02]"
+                >
+                  <span className="flex items-center justify-center space-x-2">
+                    <span>Meld på</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                  </span>
+                </button>
+              </div>
             </form>
           </div>
         </div>
         
-        <div className="mt-12 pt-8">
+        <div className="mt-12 pt-8 border-t border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
               &copy; {currentYear} HUB Phønix. Alle rettigheter reservert.

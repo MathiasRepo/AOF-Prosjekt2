@@ -57,14 +57,21 @@ export const HeroSection = () => (
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start mb-8">
             <a 
               href="#booking" 
-              className="inline-block bg-transparent border-2 border-white hover:bg-white text-white hover:text-hub-blue-dark px-8 py-3 rounded-md font-medium transition-all duration-200 text-center relative z-20 cursor-pointer"            >
-              Book nå
+              className="group inline-flex items-center justify-center bg-white/90 backdrop-blur-sm text-hub-blue-dark px-6 py-3 rounded-2xl font-bold transition-all duration-300 transform hover:scale-[1.02] border-2 border-white hover:border-white/80 hover:bg-white/80 shadow-[0_4px_16px_rgba(255,255,255,0.2)] hover:shadow-[0_8px_32px_rgba(255,255,255,0.4)]"
+            >
+              <span>Book nå</span>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2 transform transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
             </a>
             <a 
               href="#kontakt" 
-              className="inline-block bg-transparent border-2 border-white hover:bg-white text-white hover:text-hub-blue-dark px-8 py-3 rounded-md font-medium transition-all duration-200 text-center relative z-20 cursor-pointer"
+              className="group inline-flex items-center justify-center bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-2xl font-bold transition-all duration-300 transform hover:scale-[1.02] border-2 border-white/30 hover:border-white/50 hover:bg-white/20 shadow-[0_4px_16px_rgba(255,255,255,0.1)] hover:shadow-[0_8px_32px_rgba(255,255,255,0.2)]"
             >
-              Kontakt oss
+              <span>Kontakt oss</span>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2 transform transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
             </a>
           </div>
         </div>
@@ -83,7 +90,7 @@ export const HeroSection = () => (
           {/* Decorative elements around the logo */}
           <div className="absolute top-0 right-0 w-20 h-20 border-4 border-white opacity-20 rounded-full"></div>
           <div className="absolute bottom-10 left-10 w-16 h-16 border-2 border-white opacity-10 rounded-full"></div>
-          <div className="absolute top-1/4 left-0 w-8 h-8 bg-hub-blue-light opacity-20 rounded-full"></div>
+          <div className="absolute -top-1/4 left-0 w-8 h-8 bg-hub-blue-light opacity-20 rounded-full"></div>
         </div>
       </div>
     </div>
