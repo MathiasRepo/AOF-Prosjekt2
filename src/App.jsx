@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { Navigation } from './components/Navigation';
 import { HeroSection } from './components/HeroSection';
 import { LogoCarousel } from './components/prismui/logo-carousel';

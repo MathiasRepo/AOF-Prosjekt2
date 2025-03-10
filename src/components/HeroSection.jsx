@@ -55,15 +55,19 @@ export const HeroSection = () => (
           </div>
           
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start mb-8">
-            <a 
-              href="#booking" 
-              className="group inline-flex items-center justify-center bg-white/90 backdrop-blur-sm text-hub-blue-dark px-6 py-3 rounded-2xl font-bold transition-all duration-300 transform hover:scale-[1.02] border-2 border-white hover:border-white/80 hover:bg-white/80 shadow-[0_4px_16px_rgba(255,255,255,0.2)] hover:shadow-[0_8px_32px_rgba(255,255,255,0.4)]"
-            >
-              <span>Book nå</span>
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2 transform transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-              </svg>
-            </a>
+            <div className="relative group">
+              <a 
+                href="#booking" 
+                className="absolute inset-0 z-10"
+                aria-label="Book nå"
+              />
+              <div className="flex items-center justify-center gap-2 bg-white/90 backdrop-blur-sm text-hub-blue-dark px-8 py-4 rounded-2xl font-bold transition-all duration-300 transform group-hover:scale-[1.02] border-2 border-white group-hover:border-white/80 group-hover:bg-white/80 shadow-[0_4px_16px_rgba(255,255,255,0.2)] group-hover:shadow-[0_8px_32px_rgba(255,255,255,0.4)] pointer-events-none">
+                <span>Book nå</span>
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 transform transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </div>
+            </div>
             <a 
               href="#kontakt" 
               className="group inline-flex items-center justify-center bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-2xl font-bold transition-all duration-300 transform hover:scale-[1.02] border-2 border-white/30 hover:border-white/50 hover:bg-white/20 shadow-[0_4px_16px_rgba(255,255,255,0.1)] hover:shadow-[0_8px_32px_rgba(255,255,255,0.2)]"
