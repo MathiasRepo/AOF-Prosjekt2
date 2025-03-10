@@ -5,7 +5,7 @@ import { Footer } from '../components/Footer';
 
 export const BookingPage = () => (
   <div className="min-h-screen flex flex-col">
-    <Navigation />
+    <Navigation hasGradientBackground={true} />
     <main className="flex-1 flex items-center justify-center bg-white">
       <BookingSection />
     </main>

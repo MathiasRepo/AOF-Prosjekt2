@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { getImagePath } from '../utils/imagePath';
 
-export const Navigation = () => {
+export const Navigation = ({ hasGradientBackground = false }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,10 +20,28 @@ export const Navigation = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const scrollToSection = (e, sectionId) => {
+    e.preventDefault();
+    // If we're not on the home page, navigate there first
+    if (location.pathname !== '/') {
+      window.location.href = '/#' + sectionId;
+      return;
+    }
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      if (isMenuOpen) toggleMenu();
+    }
+  };
+
   return (
     <header
       className={`fixed w-full top-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white/90 backdrop-blur-md shadow-lg py-2" : "bg-transparent py-4"
+        isScrolled 
+          ? "bg-white/90 backdrop-blur-md shadow-lg py-2" 
+          : hasGradientBackground 
+            ? "bg-gradient-to-r from-hub-blue to-hub-blue-dark py-4" 
+            : "bg-transparent py-4"
       }`}
     >
       <nav
@@ -69,28 +88,30 @@ export const Navigation = () => {
         <div className={`hidden md:flex md:items-center md:justify-center md:space-x-4`}>
           <ul className="flex space-x-2 md:space-x-6">
             <li className="relative group">
-              <Link
-                to="/#kontakt"
+              <a
+                href="#kontakt"
+                onClick={(e) => scrollToSection(e, 'kontakt')}
                 className={`font-medium transition-all duration-300 block py-2 px-4 rounded-xl border-2 ${
                   isScrolled
                     ? "text-gray-800 border-transparent hover:border-gray-200 hover:bg-gray-50"
                     : "text-white border-white/10 hover:border-white/30 hover:bg-white/10"
                 }`}
               >
-                Kontakt
-              </Link>
+                Kontakt oss
+              </a>
             </li>
             <li className="relative group">
-              <Link
-                to="/#samarbeidspartnere"
+              <a
+                href="#faq"
+                onClick={(e) => scrollToSection(e, 'faq')}
                 className={`font-medium transition-all duration-300 block py-2 px-4 rounded-xl border-2 ${
                   isScrolled
                     ? "text-gray-800 border-transparent hover:border-gray-200 hover:bg-gray-50"
                     : "text-white border-white/10 hover:border-white/30 hover:bg-white/10"
                 }`}
               >
-                Samarbeidspartnere
-              </Link>
+                Ofte stilte spørsmål
+              </a>
             </li>
           </ul>
         </div>
@@ -120,22 +141,22 @@ export const Navigation = () => {
         >
           <ul className="flex flex-col w-full p-2 space-y-2">
             <li>
-              <Link
-                to="/#kontakt"
+              <a
+                href="#kontakt"
+                onClick={(e) => scrollToSection(e, 'kontakt')}
                 className="block py-3 px-6 text-gray-800 hover:bg-gray-50 border-2 border-transparent hover:border-gray-200 rounded-xl transition-all duration-300"
-                onClick={toggleMenu}
               >
-                Kontakt
-              </Link>
+                Kontakt oss
+              </a>
             </li>
             <li>
-              <Link
-                to="/#samarbeidspartnere"
+              <a
+                href="#faq"
+                onClick={(e) => scrollToSection(e, 'faq')}
                 className="block py-3 px-6 text-gray-800 hover:bg-gray-50 border-2 border-transparent hover:border-gray-200 rounded-xl transition-all duration-300"
-                onClick={toggleMenu}
               >
-                Samarbeidspartnere
-              </Link>
+                Ofte stilte spørsmål
+              </a>
             </li>
             <li>
               <Link

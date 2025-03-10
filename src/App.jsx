@@ -13,7 +13,7 @@ import { BookingPage } from './pages/Booking';
 
 const HomePage = () => (
   <main className="min-h-screen relative text-white">
-    <Navigation />
+    <Navigation hasGradientBackground={false} />
     
     {/* Main background gradient that spans the entire page */}
     <div className="fixed inset-0 bg-gradient-to-r from-hub-blue to-hub-blue-dark opacity-90 z-0"></div>
