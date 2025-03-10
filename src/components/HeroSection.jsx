@@ -1,5 +1,6 @@
 import React from 'react';
 import { getImagePath } from '../utils/imagePath';
+import { Typewriter } from 'react-simple-typewriter';
 
 export const HeroSection = () => {
   const scrollToContact = (e) => {
@@ -18,10 +19,17 @@ export const HeroSection = () => {
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 text-center md:text-left text-white">
             <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-2 font-museo">
-              HUB Phønix
+              <Typewriter
+                words={["HUB Phønix"]}
+                cursor
+                loop={false}
+                cursorStyle="_"
+                typeSpeed={100}
+                deleteSpeed={50}
+                delaySpeed={3000}
+              />
             </h1>
             <h2 className="text-2xl md:text-3xl font-light mb-4 font-museo">
-              Moderne coworking space og kontorfellesskap
             </h2>
             <p className="text-lg md:text-xl mb-4 max-w-lg">
               Et inspirerende miljø for gründere, frilansere og bedrifter som ønsker å vokse i et kreativt fellesskap.
