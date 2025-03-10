@@ -10,13 +10,13 @@ export const BookingSection = () => (
         Velg ønsket dato og tid for ditt besøk
       </p>
     </div>
-    <div className="h-[610px] rounded-lg overflow-hidden mb-60 relative">
+    <div className="h-[630px] rounded-lg overflow-hidden mb-60 relative">
       <iframe
         title="HUB Phønix Booking"
         scrolling="no"
         frameBorder="0"
         src="https://www.supersaas.com/schedule/Slowboii/HUB_Ph%C3%B8nix?partitioned=1"
-        className="w-full absolute top-[-240px] h-[calc(100%+310px)]"
+        className="w-full absolute top-[-285px] h-[calc(100%+285px)]"
       />
     </div>
   </section>
