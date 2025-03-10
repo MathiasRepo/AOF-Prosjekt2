@@ -12,10 +12,10 @@ export const HeroSection = () => {
   };
 
   return (
-    <section className="relative flex items-center overflow-hidden z-10 pb-32 pt-56">
+    <section className="relative flex items-center overflow-hidden z-10 pb-32 pt-96">
       {/* Background elements removed - now shared in App.jsx */}
       
-      <div className="container mx-auto px-6 relative z-10 mb-8">
+      <div className="container mx-auto px-6 relative z-10 mb-12">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 text-center md:text-left text-white">
             <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-2 font-museo">
